@@ -6,7 +6,12 @@ Format strings for c++14
 This library aims to offer a simple C++ interface for string formatting by making use of modern (c++14) language features.
 
 Here is a short example:
+```cpp
+  constexpr auto f = "Hello, %!\n"_fmt;
+  std::cout << f("world");
+```
 
+And a somewhat longer one:
 ```cpp
   constexpr auto bottles = R"(
       % bottles of beer on the wall, % bottles of beer.
